@@ -1,0 +1,8 @@
+# Ignora o arquivo de variáveis de ambiente
+.env
+
+# Ignora o ambiente virtual
+.venv/
+
+# Ignora arquivos de logs
+logs/
