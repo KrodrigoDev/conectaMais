@@ -1,5 +1,4 @@
 import logging
-from datetime import datetime
 from pathlib import Path
 
 LOG_DIR = Path("../conectaMais/logs")
@@ -28,7 +27,9 @@ class Logger:
         mensagem: texto trocado
         direcao: 'enviada' ou 'recebida'
         """
+
         log_entry = f"[{direcao.upper()}] Usuário: {usuario} | Mensagem: {mensagem}"
+
         self.message_logger.info(log_entry)
 
     def log_error(self, erro: str, contexto: str = ""):
